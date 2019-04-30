@@ -8,25 +8,36 @@
         html {
             height: 100%;
             margin: 0;
-        }
 
-        .bg {
             /* The image used */
-            background-image: url("images/astrology-astronomy-background-image-956981.jpg");
-
-            /* Full height */
-            height: 100%;
+            background-image: url("images/bg-light.jpg");
 
             /* Center and scale the image nicely */
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
         }
+
+        @media screen and (min-width: 512px) {
+            img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 500px !important;
+                height: 500px;
+                margin-top: -250px; /* Half the height */
+                margin-left: -250px; /* Half the width */
+            }
+        }
+
+        img {
+            width: 100%;
+        }
     </style>
 </head>
 
 <body>
-    <div class="bg"></div>
+    <img src="images/ball.png" alt="white-ball" />
 </body>
 
 </html>
